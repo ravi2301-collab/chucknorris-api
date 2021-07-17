@@ -1,6 +1,6 @@
 {
   "name": "contextapi",
-  "homepage": "https://github.com/ravi2301-collab/react-chucknorris.git",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
