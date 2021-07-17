@@ -3,7 +3,7 @@ import Home from './Home';
 import Jokes from './components/Jokes';
 import Navbar from './components/Navbar';
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 
 
 function App() {
