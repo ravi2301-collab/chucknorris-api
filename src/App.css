@@ -1,38 +1,134 @@
-.App {
+body {
+  background-color: blueviolet !important;
+}
+.align {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.new-align {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.badge {
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: black;
+  margin-left: 5px;
+}
+
+.badge:hover {
+  padding: 5px;
+  background-color: blueviolet;
+}
+.row {
+  margin: 0 !important;
+}
+.custom {
+  display: flex;
+  justify-content: center;
+}
+.custom input,
+.custom button {
+  display: inline !important;
+}
+.custom input {
+  width: 70%;
+}
+.custom button {
+  margin-left: 20px;
+}
+.custombtn {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  min-height: 200px;
+  padding: 10px !important;
+  overflow: scroll;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.card p {
+  font-size: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.navigation {
+  display: flex !important;
+  padding-top: 5px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: end !important;
+}
+.navigation li {
+  color: blueviolet;
+  text-decoration: none;
+  list-style: none !important;
+  display: inline-block !important;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 767px) {
+  .col-md-6 * {
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  .btn {
+    width: 100%;
+  }
+  .contain {
+    text-align: center;
+  }
+  .custom button {
+    margin-left: 0px;
+  }
+  .custom input,
+  .custom button {
+    display: block !important;
+  }
+  .custom button {
+    margin-top: 20px;
+  }
+  .custom input {
+    width: 100%;
+  }
+  .custom {
+    flex-direction: column;
+  }
+  .response .col-md-6 {
+    padding: 0;
+  }
+  .align * {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 370px) {
+  .navbar-brand {
+    display: block !important;
+  }
+  .navigation {
+    justify-content: center !important;
+    width: 100% !important;
   }
 }
