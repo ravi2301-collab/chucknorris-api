@@ -3,7 +3,7 @@ import gif from './load.gif'
 import JokeContext from '../Contexts/JokeContext';
 import Category from './Category';
 
-function Jokes(props) {
+function Jokes() {
  
     const [joke, setJoke ] = useState({});
     const [search, setSearch ] = useState('');
@@ -50,10 +50,10 @@ function Jokes(props) {
             <>
             <div className="new-align">
            <div className="row">
-               <div className="col-md-6">
+               <div className="col-md-6 ">
                    <Category />
                </div>
-               <div className="col-md-6">
+               <div className="col-md-6 joke-col">
                     <h3 className="display-4">  Today's Joke </h3>
                     <div className="contain">
                     {  Object.keys(joke).length === 0 ? <img src={gif} width="70" height="70"/>:<p className="lead">{ joke.value } </p> }

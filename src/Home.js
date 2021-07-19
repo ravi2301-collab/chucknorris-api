@@ -4,11 +4,9 @@ import Login from './components/Login';
 import Profile from './components/Profile';
 import LoginContext from './Contexts/LoginContext';
 
-function Home() {
+function Home({name, setName}) {
     const [profile, setProfile ] = useState(false)
-    const[ name, setName ] = useState('');
-
-
+    
     return (
         <LoginContext.Provider value={ {profile, setProfile, name, setName}}>       
             <div className="align">

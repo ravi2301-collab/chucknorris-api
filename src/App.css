@@ -9,6 +9,27 @@ body {
   min-height: 50vh;
 }
 
+.form {
+  animation-name: comeFromLeft;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  backface-visibility: hidden;
+}
+
+.joke-col {
+  animation-name: comeFromTop !important;
+  animation-duration: 1s !important;
+  animation-timing-function: ease-out !important;
+  backface-visibility: hidden;
+}
+
+ul {
+  margin-bottom: 0 !important;
+}
+
+nav p {
+  margin-bottom: 0 !important;
+}
 .new-align {
   background-color: aliceblue;
   display: flex;
@@ -121,6 +142,16 @@ body {
   .align * {
     text-align: center !important;
   }
+  .navbar {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 546px) {
+  p {
+    margin-top: 20px !important;
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 370px) {
@@ -130,5 +161,38 @@ body {
   .navigation {
     justify-content: center !important;
     width: 100% !important;
+  }
+}
+@keyframes comeFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes comeFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateX(-25px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }

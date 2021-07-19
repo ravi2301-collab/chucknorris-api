@@ -12,7 +12,7 @@ function Login() {
         setProfile(true)
     }
     return (
-        <div>
+        <div className="form">
             <div className="form-group">
                     <input onChange={ handleChange } className="form-control" placeholder="Enter Name" />
             </div>
